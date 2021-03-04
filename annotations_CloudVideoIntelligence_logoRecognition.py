@@ -320,5 +320,5 @@ for idx, bl in enumerate(blob_list):
     if idx == 0:
         continue
     print("working on video:", bl.name)
-    logo_detection_videos_to_gcs("gs://image-cv/" + str(bl.name),'gs://image-cv/outputCFMvideos/' + str(bl.name) + '.json')
+    logo_detection_videos_to_gcs("gs://bucket/" + str(bl.name),'gs://bucket/output_dir/' + str(bl.name) + '.json')
 
